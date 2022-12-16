@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container{
+    width: 100%;
+    margin: 1em auto;
+    background-color: white;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .grid{
+    display: grid;
+    margin-left: .5px;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0.2em;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .Modal-image{
+    
+    margin: auto;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+
+  
   }
+  .bold{
+    font-weight: bold;
+  }
+  .title{
+    
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+
+  }
+.title-btn{
+    font-weight: 500;
+    font-size: 16px;
+  }
+.logo{
+  position: absolute;
+width: 156px;
+height: 54px;
+left: 121px;
+top: 11px;
+background-image: url(logo.png);
+}
+.main-title{
+  font-weight: 700;
+  padding: auto;
+  font-size: 24px;
+line-height: 28px;
+}
+.rating-tag{
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: black;
+  background: white;
+  padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+  position: absolute;
+  z-index: 2;
+  top: 2rem;
+  left: 1.5rem;
+  border-radius: 100%;
+  border: 1px solid #000000;
 }
