@@ -3,7 +3,7 @@ import { useState,useEffect } from 'react';
 import './App.css';
 import MBox from './MBox';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar,Container,Nav,Form, FormControl,Button } from 'react-bootstrap';
+import { Navbar,Container,Nav,Form, FormControl} from 'react-bootstrap';
 import SearchIcon from '@mui/icons-material/Search';
 
 
@@ -48,7 +48,7 @@ function App() {
     <Navbar  expand="lg" >
       <Container fluid>
 
-        <p className='logo'/> 
+        
         
         <Navbar.Toggle aria-controls="navbarScroll"></Navbar.Toggle>
 
@@ -75,14 +75,14 @@ function App() {
     <div>
       {movie.length > 0 ?(
         <div className="container">
-        <p className='main-title'>Most Recent Movies</p>
+        <p className='main-title'>Most Popular Movies</p>
         <div className="grid">
           {movie.map((movieReq)=>
           <MBox key={movieReq.id} {...movieReq}/>)}
             </div>
     </div>
       ):(
-        <h2>Sorry,No Movies Found</h2>
+        <h2 className='not-found'>Oops,No Movies Found</h2>
       )}
     </div>   
     </>

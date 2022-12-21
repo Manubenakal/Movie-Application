@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700&display=swap");
 
 body{
-  font-family: "Source Sans Pro", sans-serif;
+   
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style-type: none;
   outline: none;
+  background-color: #2a0030;
+background-image: url("https://www.transparenttextures.com/patterns/polonez-pattern.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 .container{
     width: 100%;
     margin: 1em auto;
-    background-color: white;
+    
   }
   
   .grid{
@@ -73,4 +76,11 @@ line-height: 28px;
   left: 1.5rem;
   border-radius: 100%;
   border: 1px solid #000000;
+}
+.not-found{
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
